@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MagicOnion.Hosting" Version="3.0.13" />
+    <PackageReference Include="MessagePack.UnityShims" Version="2.1.165" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="..\CustomizeGame\Assets\Scripts\ServerShared\**\*.cs" LinkBase="LinkFromUnity" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="LinkFromUnity\" />
+  </ItemGroup>
+
+</Project>
