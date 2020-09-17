@@ -8,10 +8,10 @@ using System;
 
 public class ChatManager : MonoBehaviour
 {
-    [SerializeField] NetworkRoomManager networkRoomManager;
-    [SerializeField] Text chatField;
-    [SerializeField] ScrollRect scrollRect;
-    [SerializeField] InputField sendMessage;
+    [SerializeField] NetworkRoomManager networkRoomManager = default;
+    [SerializeField] Text chatField = default;
+    [SerializeField] ScrollRect scrollRect = default;
+    [SerializeField] InputField sendMessage = default;
 
     //chat Managed UniRx
     private Subject<string> selfMessageSubject;
