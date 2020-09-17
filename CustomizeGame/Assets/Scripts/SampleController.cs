@@ -11,7 +11,7 @@ public class SampleController : MonoBehaviour, ISampleHubReceiver
     private ISampleService sampleService;
     private ISampleHub sampleHub;
 
-    async void Start()
+    void Start()
     {
         this.channel = new Channel("localhost:12345", ChannelCredentials.Insecure);
         this.sampleService = MagicOnionClient.Create<ISampleService>(channel);

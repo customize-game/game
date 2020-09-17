@@ -14,25 +14,25 @@ public class NetworkRoomManager : MonoBehaviour, IGameHubReceiver
 
     private Channel channel;
     IGameHub gameHub;
-    [SerializeField] private string roomName;
+    [SerializeField] private string roomName = default;
 
-    [SerializeField] Text host;
-    [SerializeField] Text port;
+    [SerializeField] Text host = default;
+    [SerializeField] Text port = default;
 
-    [SerializeField] Text roomMemberDisplay;
+    [SerializeField] Text roomMemberDisplay = default;
 
-    [SerializeField] private PlayerMPO self;
-    [SerializeField] private Dictionary<string, PlayerMPO> players;
+    [SerializeField] private PlayerMPO self = default;
+    [SerializeField] private Dictionary<string, PlayerMPO> players = default;
 
-    [SerializeField] Material defaultMaterial;
+    [SerializeField] Material defaultMaterial = default;
 
     //chat Managed UniRx
     private Subject<string> messageSubject;
-    [SerializeField] ChatManager chatManager;
+    [SerializeField] ChatManager chatManager = default;
 
-    [SerializeField] Button trainingMatchButton;
-    [SerializeField] Button pvpMatchButton;
-    [SerializeField] Button pveMatchButton;
+    [SerializeField] Button trainingMatchButton = default;
+    [SerializeField] Button pvpMatchButton = default;
+    [SerializeField] Button pveMatchButton = default;
 
     private bool matchingFlag; 
 
